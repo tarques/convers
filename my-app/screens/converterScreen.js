@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, View, Text, TextInput, Button, Picker } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
 import axios from 'axios';
 
 
 const converterScreen = () => {
   const [amount, setAmount] = useState('');
-  const [fromCurrency, setFromCurrency] = useState('BRL');z
+  const [fromCurrency, setFromCurrency] = useState('BRL');
   const [toCurrency, setToCurrency] = useState('USD');
   const [result, setResult] = useState(null);
   const [exchangeRates, setExchangeRates] = useState({});
@@ -118,3 +119,4 @@ const styles = StyleSheet.create({
   },
 });
 
+export default converterScreen;

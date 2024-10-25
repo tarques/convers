@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, TextInput, Button, Alert } from 'react-native';
+import { StyleSheet, Text, View, TextInput, Button, Alert, TouchableOpacity } from 'react-native';
 
-const HomeScreen = () => {
-    const navigation = useState();
-
-
+export default function HomeScreen({navigation}){
+    
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Convers</Text>
@@ -29,7 +27,7 @@ const HomeScreen = () => {
     </View>
   );
 
-
+}
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -57,4 +55,4 @@ const styles = StyleSheet.create({
   },
 });
 
-}
+

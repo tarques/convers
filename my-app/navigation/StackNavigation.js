@@ -1,9 +1,9 @@
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import converterScreen from '././screens/converterScreen';
-import imcScreen from '././screens/imcScreen';
-import medidaScreen from '././screens/medidaScreen';
-import homeScreen from '././screens/homeScreen';
+import converterScreen from '../screens/converterScreen';
+// import imcScreen from '../screens/imcScreen';
+import medidaScreen from '../screens/medidaScreen';
+import homeScreen from '../screens/homeScreen';
 
 const Stack = createNativeStackNavigator();
 
